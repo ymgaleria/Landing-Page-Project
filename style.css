@@ -2,23 +2,24 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #24252A;
+    background-color: #02a1fb;
+    /* border: 1px solid lime; */
 }
 
+/* header CSS */
 header {
-    display: fixed;
-
+    position: fixed;
     width: 100vw;
-    height: 10px;
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    padding: 30px 10%;
+    padding: 5px 10%;
+    top: 0;
 }
 
 #header-img {
     cursor: pointer;
-    width: 100px;
+    width: 60px;
     margin-right: auto;
 }
 
@@ -39,15 +40,16 @@ a:hover {
     color: #0088a9;
 }
 
-li, a, button {
+li, a, #buy-btn {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     font-size: 16px;
-    color: #edf0f1;
+    color: #fcfafb;
     text-decoration: none;
+    background-color: #02a1fb;
 }
 
-button {
+#buy-btn {
     padding: 9px 25px;
     background-color: rgba(0, 136, 169, 1);
     border: none;
@@ -57,7 +59,48 @@ button {
     margin-left: 20px;
 }
 
-button:hover {
+#buy-btn:hover {
     background-color: rgba(0, 136, 169, 0.8);
 }
+
+/* Hero page */
+
+.container {
+    display: grid;
+    grid-template-columns: 2fr, 1fr;
+    grid-template-rows: 61.8px repeat(4, 1fr);
+    height: 100vh;
+    gap: 40px;
+}
+
+h1, p {
+    color: #fcfafb;
+    font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: 700;
+  font-style: bold;
+}
+
+#title {
+    grid-area: 3 / 3 / 3 / 4;
+}
+
+#sub-info {
+    font-size: 20px;
+    font-weight: 500;
+    font-style: bold;
+    grid-area: 4 / 3 / 4 / 4;
+}
+
+#bucket {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: 3 / 1 / 5 / 2;
+    margin-lef: 50px;
+}
+
 
