@@ -15,26 +15,68 @@
         <img src="./assets/CBTB logo.png" id="header-img" alt="cbtb logo">
         <nav id="nav-bar">
             <ul>
-                <li class="nav-link"><a href="">Hero Page</a></li>
-                <li class="nav-link"><a href="">Video Page</a></li>
-                <li class="nav-link"><a href="">Form</a></li>
+                <li class="nav-link"><a href="#mascot">Home</a></li>
+                <li class="nav-link"><a href="#product-section">Cookies</a></li>
+                <li class="nav-link"><a href="#promotion">Promotions</a></li>
             </ul>
         </nav>
-        <a class="contact" href="#"><button id="buy-btn">Buy Now</button></a>
+        <a class="contact" href="#"><button id="contact-btn">Contact</button></a>
     </header>
     <main>
         <!-- Hero Page -->
         <section>
             <div class="container">
-                <div id="bucket"><img src="./assets/Bucket with cookies.png" alt="bucket with cookies"></div>
-                <div id="title"><h1>reshly baked on-the-spot cookie house</h1></div>
-                <div id="sub-info"><p>pioneering FRESHLY BAKED COOKIES ON THE SPOT, and are now expanding our presence in the metro.</p></div>
-                <div><button>Shop Now</button></div>
-                <div></div>
+                <img src="./assets/Bucket with cookies.png" id="bucket" alt="bucket with cookies">
+                <div id="hero-content">
+                    <img id="mascot" src="./assets/mascot.png" alt="cookie mascot on top of cookies">
+                    <h1 id="title">BETTER WHEN SHARED</h1>
+                    <div id="sub-info"><p>Delectable cookies alongside milk, perfect as a treat, souvenir, or 'pasalubong' for your loved ones.</p></div>
+                    <div id="review">
+                        <button id="buy-btn">Buy Now</button>
+                        <div id="rating">
+                            <div id="review-profile">
+                                <img id="cobu" src="./assets/Cobu presenting.png" alt="cobu">
+                                <div>
+                                    <p>Melody Kay</p>
+                                    <p>⭐⭐⭐⭐⭐</p>
+                                </div>
+                            </div>
+                            <hr>
+                            <p>The cookies were so good that I had to cheat on my month-long diet. I didn’t even want to share."</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
-        <!-- TO DO: USER STORY 6 -->
-         <!-- TO DO: FORM -->
+        <!-- PRODUCTS -->
+        <section id="product-section">
+            <h2>GET YOUR COOKIE FIX...</h2>
+            <div class="product-container"> 
+                <div class="cookies">
+                    <img class="chip" src="./assets/chocolate-chip.png" alt="chocolate chip cookie"><h3>Chocolate Chip</h3><p>Taste the chocolate chip with every bite!</p>
+                </div>
+                <div class="cookies">
+                    <img class="chip" src="./assets/chocolate.png" alt="chocolate cookie"><h3>Double Choco</h3><p>For the chocolate lovers!</p>
+                </div>
+                <div class="cookies"><img class="chip" src="./assets/peanut-butter.png" alt="peanut butter"><h3>Peanut Butter</h3><p>Peanut buttery goodness!</p></div>
+                <div class="cookies"><img class="chip" src="./assets/crinkle.png" alt="crinkle"><h3>Crinkle</h3><p>Delectable cookies!</p></div>
+            </div>
+        </section>
+         <!-- FORM -->
+          <section>
+            <div id="section-three">
+                <div id="sign-up">
+                    <div><p id="promotion">SIGN-UP TO BE THE FIRST TO HEAR ABOUT OUR BRAND PROMOTION <span>AND MORE.</span></p></div>
+                    <form id="form" methond="post" action="submit.html">
+                        <input name="first-name" id="name" type="text" placeholder="First Name" required />
+                        <input name="last-name" id="last-name" type="text" placeholder="Last Name" required />
+                        <input name="email" id="email" type="email" placeholder="Enter email address" required />
+                        <input type="submit" value="submit" id="submit">
+                    </form>
+                </div>
+                <video id="video" class="video" src="./assets/cbtb-vid.mp4" muted autoplay loop></video>
+            </div>
+            </section>
     </main>
 </body>
 </html>
